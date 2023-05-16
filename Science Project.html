@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    
+<style>
+    .header{
+    background: color powderblue;
+    text-align:center;
+position: fixed; 
+}
+    
+    .header h2{
+        color:black;
+    }
+    .footer{
+        position:fixed;
+        left:0;
+        width:100%;
+        background-color: #455e64;
+        padding-top:40px;
+        text-align:center;
+    height:100px; 
+}
+        .footer p{color:#8fbc8f;}
+
+.nav{
+    background: #243238;
+    padding: 50px;
+    height:50px;
+}
+.nav li{
+    list-style: none;
+    display: inline-block;
+    padding:15px;
+}
+.nav a{
+    color:#fff;
+}
+.nav ul li a:hover{
+    text-decoration:none;
+    color:#7fffd4;
+}
+.lside{
+    float:left;
+    width:100%;
+    height:100%;
+    min-height:440px;
+    background-color:#f0f8ff;
+    text-align:center;
+}
+.rside{
+    text-align:center;
+    float:right;
+    width:20%;
+    min-height:440px;
+    background-color: #c1cdcd;
+}
+    
+    
+</style>
+</head>
+<body>
+  <div>
+    
+
+<!--Nav-->
+<div class="nav">
+    
+    <ul>
+        <li> <a href="Science Project.html"> <img src= "data:image/png;base64,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" width="40px" height="35px"> Home</a> </li>
+        <li><a href="Science page 2.html">Effects of E.coli</a></li>
+        <a href="Science page 3.html">Categories</a></li>
+        <li><a href="Science page4.html">Antibiotic Restistance</a></li>
+        <li><a href="Science page 5.html">Interviews</a></li>
+       
+    </ul>
+</div>
+<!--main-->
+<div style="height:1000px">
+    <div class="lside">
+    <h2><br>
+    What is E. Coli    
+    
+    </h2>
+    <p style="font-family: 'Times New Roman', Times, serif;">
+        Escherichia coli (abbreviated as E. coli) are bacteria found in the environment, foods, and intestines of people and animals. E. coli are a large and diverse group of bacteria. Although most strains of E. coli are harmless, others can make you sick. Some kinds of E. coli can cause diarrhea, while others cause urinary tract infections, respiratory illness and pneumonia, and other illnesses.
+    
+    </p>
+    <h2>
+      Why is E. Coli So Dangerous
+    </h2>
+    <p style="font-family: 'Times New Roman', Times, serif;">Most E. coli are harmless and are part of a healthy intestinal tract. However, some cause illnesses that are sometimes severe, such as diarrhea, urinary tract infections, respiratory illness, and bloodstream infections.</p>
+    <br>
+    <h2>
+        Where is E. Coli Most Common?
+    </h2>
+    <img src="https://safefoodalliance.com/wp-content/uploads/2019/03/image-5.png" height="350px", width="400px">
+    <p style="font-family: 'Times New Roman', Times, serif;">This image here shows the data from the global E. Coli outbreak crisis, and it was showing majority of south America was heavily affected. Showing that E. Coli is most common in Africa, South America, and Southern Asia.</p>
+    
+</div>
+
+<div class="bottom">
+
+</div>
+
+  </div>  
+  
+</div>
+</body>
+</html>

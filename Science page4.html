@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    
+<style>
+    .header{
+    background: color powderblue;
+    text-align:center;
+position: fixed; 
+}
+    
+    .header h2{
+        color:black;
+    }
+    .footer{
+        position:fixed;
+        left:0;
+        width:100%;
+        background-color: #455e64;
+        padding-top:40px;
+        text-align:center;
+    height:100px; 
+}
+        .footer p{color:#8fbc8f;}
+
+.nav{
+    background: #243238;
+    padding: 50px;
+    height:50px;
+}
+.nav li{
+    list-style: none;
+    display: inline-block;
+    padding:15px;
+}
+.nav a{
+    color:#fff;
+}
+.nav ul li a:hover{
+    text-decoration:none;
+    color:#7fffd4;
+}
+.lside{
+    float:left;
+    width:100%;
+    height:100%;
+    min-height:440px;
+    background-color:#f0f8ff;
+    text-align:center;
+}
+.rside{
+    text-align:center;
+    float:right;
+    width:20%;
+    min-height:440px;
+    background-color: #c1cdcd;
+}
+    
+    
+</style>
+</head>
+<body>
+  <div>
+    
+
+<!--Nav-->
+<div class="nav">
+    
+    <ul>
+        <li> <a href="Science Project.html"> <img src= "data:image/png;base64,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" width="40px" height="35px"> Home</a> </li>
+        <li><a href="Science page 2.html">Effects of E.coli</a></li>
+        <a href="Science page 3.html">Categories</a></li>
+        <li><a href="Science page4.html">Antibiotic Restistance</a></li>
+        <li><a href="Science page 5.html">Interviews</a></li>
+       
+    </ul>
+   
+
+</div>
+<!--main-->
+<div style="height:1000px">
+    <div class="lside">
+        
+    <h4>Antibiotic Resistance<br>
+        
+    </h4>
+    <p style="font-family: 'Times New Roman', Times, serif;">E. coli can alter its genetic makeup very quickly through the process of mutations in normal cellular genes, by doing this they are able to get foreign-resistance genes from the environment they are present in, or by a mix of those functions. Medical Xpress says, “Bacteria such as Escherichia coli can alter their genetic makeup with astonishing rapidity. They do this, said DebRoy, ‘through mutations in normal cellular genes, by acquiring foreign-resistance genes from the environment or by a combination of those mechanisms.’” This tells us how E.coli can alter its genetic makeup so quickly to get foreign-resistance genes to antibiotics. Another article by asm.org says, “E. coli is intrinsically susceptible to almost all clinically relevant antimicrobial agents, but this bacterial species has a great capacity to accumulate resistance genes, mostly through horizontal gene transfer.” This explains how E. coli has such a great capacity to accumulate resistance genes, similarly to the above article this article by ASM.org also says they have the ability for horizontal gene transfer.</p>
+        <br> 
+        <img src="https://d2jx2rerrg6sh3.cloudfront.net/image-handler/picture/2021/5/shutterstock_273641858.jpg" width="400" height="350">
+        <p style="font-family: 'Times New Roman', Times, serif;">Another article by Oxford University Press talks about how E. coli is becoming more resistant to antibiotics. It explains that it is a life-threating bloodstream infections which has other common infections. Oxford University Press also says, “Escherichia coli is a frequent cause of life-threatening bloodstream infections [1] and other common infections, such as urinary tract infections. Antibiotic resistance rates in E. coli are rapidly rising, especially with regard to fluoroquinolones and third- and fourth-generation cephalosporins.” This explains how E. coli’s antibiotic resistance rates are rapidly rising as it starts to adapt to the new environments and conditions and connecting this to the first article, to why it is rapidly becoming antibiotic resistance is because of the foreign resistance genes that are mutated from the normally cellular genes.</p>
+    <img src="data:image/jpeg;base64,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" width="450" height="400">
+
+</div>
+
+<div class="bottom">
+
+</div>
+
+  </div>  
+ 
+</div>
+</body>
+</html>
